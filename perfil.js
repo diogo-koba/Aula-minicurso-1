@@ -8,20 +8,20 @@ let alvoTopo = document.getElementById('topo');
 
 if (btnTopo && alvoTopo) {
   function atualizaBotaoTopo() {
-    let scrollou = window.scrollY > 300;
+    let scrollou = window.scrollY > 100;
     btnTopo.hidden = !scrollou;
     if(scrollou){
         btnTopo.classList.remove('escondendo');
-    } else{
+    } else {
         btnTopo.classList.add('escondendo');
+      }
     }
-  atualizaBotaoTopo();
+    atualizaBotaoTopo();
   window.addEventListener('scroll', atualizaBotaoTopo, { passive: true });
 
   btnTopo.addEventListener('click', function () {
     alvoTopo.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
-}
 }
 var msgVisita = document.getElementById('msg-visita');
 
