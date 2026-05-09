@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="perfil-hero" id="topo">
+        <h1>Diogo Koba</h1>
+        <nav class="perfil-hero__nav" aria-label="Ir para seção">
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+        </nav>
+    </header>
+    <main class="perfil-main">
+        <section class="cartao">
+            <h2>Sobre mim</h2>
+            <p>Eu estou estudando html :D</p>
+            <img class="perfil-foto" src="13.jpg.jpg" alt="Foto minha" width="200"
+        </section>        
+        <section>
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="perfil-rodape" id="contato">
+        <h2>Contatos</h2>
+        <table>
+                <caption>Onde me encontrar</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Rede</th>
+                        <th scope="col">Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GitHub</td>
+                        <td>
+                            <a href="https://github.com/diogo-koba">Perfil</a>
+                        </td>
+                    </tr>
+                </tbody>
+        </table>
+        <p class="perfil-rodape__extras" id="msg-visita" role="status"></p>
+        <p class="perfil-rodape__copy">
+        © <span id="rodape-ano"></span> Diogo Yudi Koba
+        </p>
+        <button type="button" id="btn-voltar-topo" class="btn-voltar-topo" aria-label="Voltar ao topo">↑</button>
+        <script src="perfil.js" defer></script>
+    </footer>
+</body>
+</html>
